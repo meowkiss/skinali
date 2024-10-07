@@ -19,7 +19,16 @@
             
             // p+p {
             //     margin-top: 15px;
-            // }
-            body {}
-            
-            .container {}
+            // 
+            // Настройка Цветов
+            @import 'colors';
+            //Базовые настройки сетки
+            @import 'fonts';
+            // Настройка Цветов
+            @import 'grid';
+            // Настройка Шрифтов
+            @import 'interface';
+            //Шапка сайта
+            @import 'blocks/navbar';
+            // Интро сайта
+            @import 'blocks/intro';

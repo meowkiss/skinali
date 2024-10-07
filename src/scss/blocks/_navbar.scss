@@ -1,0 +1,108 @@
+    .header {}
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        background-color: #ffffff;
+        &__wrapper {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+        &-btn {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid rgba(#ede6f8, 1);
+            border-left: 1px solid rgba(#ede6f8, 1);
+            width: 70px;
+            height: 82px;
+            background-color: transparent;
+            &__line {
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: #507fe1;
+                margin-bottom: 2px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__logo {
+            display: flex;
+            flex-direction: column;
+        }
+        &__mobile,
+        &__landline {
+            display: block;
+            text-align: right;
+        }
+        &__phone {
+            @include bold;
+            display: block;
+            text-transform: uppercase;
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+        &__small-text {
+            display: block;
+            font-size: 14px;
+            color: $text-color-light;
+        }
+    }
+    
+    .logo {
+        &__text {
+            @include bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.54px;
+            margin-bottom: 5px;
+        }
+        &__desc {
+            font-size: 14px;
+            color: $text-color-light;
+        }
+    }
+    
+    .menu {
+        &-nav {
+            z-index: 0;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            padding: 20px 0;
+            width: 100%;
+            background-color: $priority;
+            transform: translateY(-100%);
+            transition: transform 0.5s ease;
+            &_active {
+                &:active {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    
+    .nav {
+        &__list {
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__item {}
+        &__link {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }

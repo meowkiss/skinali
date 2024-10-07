@@ -1,0 +1,26 @@
+.intro {
+    background: #f1f1f1 url('../../img/intro__bacground.jpg') center top 80px/cover no-repeat;
+    &-wrapper {
+        padding: 210px 10px 270px;
+        height: 780px;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    &-subtitle {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    &__button {
+        display: block;
+        padding: 25px 40px;
+        max-width: 240px;
+        width: 100%;
+    }
+}
