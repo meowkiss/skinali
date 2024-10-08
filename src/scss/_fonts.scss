@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Proxima Nova Semibold', sans-serif;
-    src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -13,7 +13,8 @@
 }
 
 @mixin bold {
-    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-weight: 600;
 }
 
 @mixin light {

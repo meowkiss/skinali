@@ -1,26 +1,42 @@
-.body {
-    @include light;
-    color: $text-color;
-}
-
-.navbar {
-    &__button-o {
-        @include bold;
-        color: $priority;
-        padding: 17px 20px;
-        background-color: transparent;
-        font-size: 12px;
-        text-transform: uppercase;
-        border: 2px solid $priority;
+    .body {
+        @include light;
+        color: $text-color;
     }
-}
-
-.button {
-    text-transform: uppercase;
-    font-size: 15px;
-    background-color: $priority;
-    color: #ffffff;
-    border: 1px solid #3866c7;
-    @include bold;
-    text-align: center;
-}
+    
+    .navbar {
+        &__button-o {
+            @include bold;
+            color: $priority;
+            padding: 17px 20px;
+            background-color: transparent;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 2px solid $priority;
+        }
+    }
+    
+    .button {
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color: $priority;
+        color: #ffffff;
+        border: 1px solid #3866c7;
+        @include bold;
+        text-align: center;
+    }
+    
+    @media (max-width:1180px) {}
+    
+    @media (max-width:767px) {}
+    
+    @media (max-width: 991px) {}
+    
+    @media (max-width:767px) {}
+    
+    @media (max-width: 576px) {
+        .navbar {
+            &__button-o {
+                font-size: 10px;
+            }
+        }
+    }

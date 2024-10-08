@@ -82,11 +82,11 @@
             padding: 20px 0;
             width: 100%;
             background-color: $priority;
-            transform: translateY(-100%);
+            transform: translateY(-200%);
             transition: transform 0.5s ease;
             &_active {
                 &:active {
-                    transform: translateY(0);
+                    transform: translateY(0%);
                 }
             }
         }
@@ -104,5 +104,55 @@
             font-size: 17px;
             text-transform: uppercase;
             color: #ffffff;
+        }
+    }
+    
+    @media (max-width:1180px) {
+        .nav {
+            &__list {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-evenly;
+            }
+            &__item {}
+            &__link {}
+        }
+    }
+    
+    @media (max-width:767px) {}
+    
+    @media (max-width: 991px) {
+        .navbar {
+            &__mobile,
+            &__landline {
+                display: none;
+            }
+        }
+    }
+    
+    @media (max-width:767px) {}
+    
+    @media (max-width: 576px) {
+        .navbar {
+            &__wrapper {
+                min-height: 60px;
+            }
+            &-btn {
+                height: 60px;
+            }
+        }
+        .nav {
+            &__list {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .menu {
+            &-nav {
+                top: 60px;
+            }
+        }
+        .logo {
+            display: none;
         }
     }
