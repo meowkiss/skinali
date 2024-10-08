@@ -1,7 +1,10 @@
 .intro {
-    background: #f1f1f1 url('../../img/intro__bacground.jpg') center top 80px/cover no-repeat;
+    background: #f1f1f1 url('../../img/intro__bacground.jpg') center top /cover no-repeat;
+    &__block {
+        margin-top: 80px;
+    }
     &-wrapper {
-        padding: 210px 10px 270px;
+        padding: 120px 10px 270px;
         height: 780px;
         width: 100%;
         max-width: 300px;
@@ -27,20 +30,27 @@
 
 @media (max-width:1180px) {
     .intro {
-        background: #f1f1f1 url('../../img/intro__bacground.jpg') top 80px left 35%/cover no-repeat;
+        background: #f1f1f1 url('../../img/intro__bacground.jpg') top left 35%/cover no-repeat;
     }
 }
 
 @media (max-width: 992px) {
     .intro {
-        background: #f1f1f1 url('../../img/intro__bacground.jpg') top 80px left 35%/cover no-repeat;
+        background: #f1f1f1 url('../../img/intro__bacground.jpg') top left 35%/cover no-repeat;
     }
 }
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .intro {
+        background: #f1f1f1 url('../../img/intro__bacground.jpg') top right/100% no-repeat;
+    }
+}
 
 @media (max-width: 576px) {
     .intro {
-        background: #f1f1f1 url('../../img/intro__bacground.jpg') top left 29%/cover no-repeat;
+        background: #f1f1f1 url('../../img/intro__bacground.jpg') top right/100% no-repeat;
+        &__block {
+            margin-top: 60px;
+        }
     }
 }
