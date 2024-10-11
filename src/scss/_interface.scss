@@ -23,6 +23,8 @@
         border: 1px solid #3866c7;
         @include bold;
         text-align: center;
+        display: block;
+        padding: 25px 40px;
     }
     
     @media (max-width:1180px) {}

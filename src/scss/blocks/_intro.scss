@@ -1,11 +1,14 @@
 .intro {
-    background: #f1f1f1 url('../../img/intro__bacground.jpg') center top /cover no-repeat;
     &__block {
+        background-color: #f1f1f1;
         margin-top: 80px;
+        padding-bottom: 82px;
+    }
+    &__block-background {
+        background: url('../../img/intro__bacground.jpg') center top /cover no-repeat;
     }
     &-wrapper {
         padding: 120px 10px 270px;
-        height: 780px;
         width: 100%;
         max-width: 300px;
         display: flex;
@@ -19,12 +22,6 @@
         display: block;
         font-size: 30px;
         margin-bottom: 40px;
-    }
-    &__button {
-        display: block;
-        padding: 25px 40px;
-        max-width: 240px;
-        width: 100%;
     }
 }
 
@@ -48,7 +45,6 @@
 
 @media (max-width: 576px) {
     .intro {
-        background: #f1f1f1 url('../../img/intro__bacground.jpg') top right/100% no-repeat;
         &__block {
             margin-top: 60px;
         }

@@ -83,18 +83,74 @@
     </header>
     <main class="main">
         <section class="intro intro__block">
-            <div class="container">
-                <div class="intro-wrapper">
-                    <h2 class="intro-title">Гарантия минимальной цены на скинали</h2>
-                    <div class="intro-subtitle">от 3 000 р/м2</div>
-                    <button class="button intro__button">заказать скинали</button>
+            <div class="intro__block-background">
+                <div class="container">
+                    <div class="intro-wrapper">
+                        <h1 class="intro-title">Гарантия минимальной цены на скинали</h1>
+                        <div class="intro-subtitle">от 3 000 р/м2</div>
+                        <button class="button intro__button">заказать скинали</button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- OFFER BLOCK START-->
+        <section class="offer">
+            <div class="container">
+                <div class="offer-block offer__block">
+                    <h2 class="offer-block__title">оставьте заявку на расчет</h2>
+                    <p class="offer-block__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</p>
+                    <form class="form offer__form" method="post" enctype="multipart/form-data" action="#">
+
+                        <div class="form__row form__row-column">
+                            <div class="form__group">
+                                <label class="form__label" for="">Вид стекла</label>
+                                <select class="form__select" name="glass-type" id="">
+                                    <option class="form__option" selected value="with">С печатью </option>
+                                    <option class="form__option" value="without">Без печати</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="">Ширина, см</label>
+                                <input class="form__input" type="text">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="">Высота, см</label>
+                                <input class="form__input" type="text">
+                            </div>
+                        </div>
+                        <div class="form__row ">
+                            <div class="form__checkbox">
+                                <input class="form__input-check" type="checkbox" id="checkbox1" name="service1" value="assembly">
+                                <label class="form__label-check" for="checkbox1"> Монтаж</label>
+                            </div>
+                            <div class="form__checkbox ">
+                                <input class="form__input-check" type="checkbox" id="checkbox2" name="service2" value="delivery">
+                                <label class="form__label-check" for="checkbox2"> Доставка</label>
+                            </div>
+                        </div>
+
+                        <div class="form__row form__row-column ">
+                            <div class="form__group ">
+                                <input class="form__input " placeholder="Ваше имя" name="name-user" id="name" type="text">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__input" placeholder="Ваш телефон" name="telephone-number" id="phone-number" type="tel ">
+                            </div>
+                            <div class="form__group">
+                                <input class="button form__button" type="submit" name="button" value="получить скидку"></input>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFER BLOCK END -->
     </main>
 
     <!-- Подключение виджета обратной связи через соцсети spikmi -->
-    <script type="text/javascript" src="https://spikmi.org/Widget?Id=20497"></script>
+    <script type="text/javascript " src="https://spikmi.org/Widget?Id=20497 "></script>
 </body>
 
 
