@@ -25,6 +25,23 @@
         text-align: center;
         display: block;
         padding: 25px 40px;
+        &-fitting {
+            background-color: white;
+            color: $priority;
+            padding: 10px;
+        }
+        &-add {
+            color: white;
+            background-color: lighten($priority, 10%);
+            padding: 10px;
+        }
+        &-like {
+            padding: 0 8px;
+            background-color: $priority;
+            height: 30px;
+            width: 30px;
+            &__image {}
+        }
     }
     
     .section {
